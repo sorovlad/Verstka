@@ -1,0 +1,265 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+
+body
+{
+	margin: 0;
+	width: 100%;
+}
+.wrapper
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	/*background: url(image/fon.png);*/
+	background: #fdfbf4;
+}
+.header
+{
+	width: 100%;
+	height: 100px;
+	
+	background: url(image/logo.png) 90% 0 no-repeat;
+	background-color: #64585a;
+}
+.image-menu
+{
+	padding-top: 5px;
+	width: 50px;
+}
+.small-button
+{
+	height: 45px;
+	width: 45px;
+	margin: 5px;
+	background-color: #debf8d;
+	background: url(image/icons.png);
+}
+.small-button[data-count="1"]
+{
+	background-position: 0px 0px;
+}
+.small-button[data-count="2"]
+{
+	background-position: 45px 0px;
+}
+.small-button[data-count="3"]
+{
+	background-position: 90px 0px;
+}
+.small-button[data-count="4"]
+{
+	background-position: 135px 0px;
+}
+.small-button[data-count="5"]
+{
+	background-position: 180px 0px;
+}
+.small-button[data-count="1"]:hover
+{
+	background-position: 0px 45px;
+}
+.small-button[data-count="2"]:hover
+{
+	background-position: 45px 45px;
+}
+.small-button[data-count="3"]:hover
+{
+	background-position: 90px 45px;
+}
+.small-button[data-count="4"]:hover
+{
+	background-position: 135px 45px;
+}
+.small-button[data-count="5"]:hover
+{
+	background-position: 180px 45px;
+}
+.content
+{
+	width: 950px;
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	justify-content: flex-start;
+	flex-flow: wrap;
+
+	min-height: calc(100vh - 260px)
+}
+.description,
+.rulles,
+.card-image-1,
+.button-content,
+.rule
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+.footer
+{
+	width: 100%;
+	height: 100px;
+	background-color: #64585a;
+	background: url(image/footerfon.png);
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.rule
+{
+	background: #918479;
+	margin: 10px;
+	height: 80px;
+	width: 350px;
+}
+.control-menu
+{
+	display: flex;
+	justify-content: center;
+	/*flex-content: ;*/
+}
+
+.button-content
+{
+	margin: 5px;
+	background-color: #debf8d;
+	white-space: nowrap;
+	width: 190px;
+	height: calc(50px)
+}
+.description
+{
+	display: flex;
+	flex-flow: wrap;
+	margin: 10px;
+	/*padding: 10px;*/
+	width: 600px;
+	height: 400px;
+	background-color: #cec1b2;
+}
+.rulles
+{
+	display: flex;
+	flex-flow: wrap;
+	margin: 10px;
+	height: auto;
+	background-color: #cec1b2;
+}
+
+.description > *
+{
+	margin: 20px;
+}
+.rulles
+{
+	width: 930px;
+	margin: 10px;
+	background-color: #cec1b2;
+}
+.rulles h3,
+.rulles p
+{
+	margin: 10px;
+}
+.card-image-1
+{
+	margin: 10px;
+	width: 310px;
+	height: 400px;
+	background-color: #cec1b2;
+	overflow: hidden;
+}
+.card-image-1 img
+{
+	width: 100%;
+}
+.card-image-2
+{
+
+}
+
+.border
+{
+	width: 100%;
+}
+
+.button-content
+{
+
+}
+.button-content:hover,
+.small-button:hover
+{
+	background-color: #918479;
+}
+.header-image
+{
+	max-width: 100%;
+}
+@media all and (max-width: 1030px) {
+  .wrapper
+  {
+
+  	flex-flow: column nowrap;
+  }
+  .image-menu
+  {
+  	/*align-self: flex-end;*/
+  	display: flex;
+  	justify-content: flex-end;
+  	width: 95%;
+  }
+  .control-menu
+  {
+  	width: 100%;
+  }
+  .button-content
+  {
+  	width: calc(20vw - 10px);
+  }
+	.card-image-1
+	{
+		display: none;
+	}
+	.description
+	{
+		width: 100%;
+		height: auto;
+	}
+  .content
+  {
+  	min-height: calc(100vh - 320px);
+  	width: 100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .wrapper
+  {
+	
+  }
+  .image-menu
+  {
+  	display: none;
+  }
+  .control-menu
+  {
+  	flex-flow: column nowrap;
+  }
+  .button-content
+  {
+  	width: calc(100% - 10px);
+  }
+  .content
+  {
+  	min-height: calc(100vh - 500px);
+  }
+}
